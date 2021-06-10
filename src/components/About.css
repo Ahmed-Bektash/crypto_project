@@ -1,0 +1,155 @@
+.About-wrapper{
+    /* padding: 5rem; */
+    height: 100vh;
+    /* background: linear-gradient(to bottom, black 50% ,gray); */
+    /* background: black; */
+    background: linear-gradient(to bottom,#191919c0,#17171796,#050505);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+    /* .about-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to top,#1717174b,#1b1b1b 90%);
+        z-index: 0;
+        opacity: 0.9;
+      } */
+    
+    /* .video-hero {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 0;
+        opacity: 100%;
+        margin: 0;
+        top:0;
+        left:0;
+    
+      } */
+
+.About{
+margin: 1rem;
+padding:1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: linear-gradient(90deg, blue,red);
+border-radius: 10px;
+max-width: 800px;
+z-index: 5;
+}
+div h2{
+margin: 10px;
+align-self: flex-start;
+}
+
+.values, .values Li{
+    list-style-type: none;
+}
+
+.gamepad-About{
+
+font-size: medium;
+color: red;
+
+}
+
+
+
+
+.Stats{
+/* margin: 1rem; */
+padding:1rem;
+display: grid;
+grid-template-areas:" a  b"
+                    " c  d";
+grid-template-columns: repeat(autofit,minmax(240px,1fr));
+gap: 1rem;
+background: linear-gradient(90deg, red,blue);
+border-radius: 10px;
+gap:0.5rem;
+
+}
+.part-title{
+/* background-image: linear-gradient(to right,#fb0094 0%,#0000ff 10%,#00ff00 20%,#ffff00 30%,#ff0000 40%,#fb0094 50%,#0000ff 60%,#00ff00 70%,#ffff00 80%,#ff0000 100%);
+background-size: 100%;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color: transparent; */
+color:white;
+text-align: center;
+margin: 1rem;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat h1{
+    font-size: 30px;
+}
+
+p{
+    margin: 0.5rem;
+    color:white;
+    font-size: large;
+
+}
+
+div>h1{
+    color:white;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .Stats{
+        background: linear-gradient(0deg, red,blue);
+    }
+
+    .About-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        /* background: linear-gradient(to bottom, black 50% ,gray 80%, rgb(207, 199, 199) 100%); */
+        /* background: black; */
+        background: linear-gradient(to bottom,#191919,#171717,#050505);
+       
+    }
+    .Stats-container{
+        margin-top: 5rem;
+        width: 300px;
+    }
+
+
+    .stat>h1{
+        font-size: xx-large;
+    }
+
+    .stat>p{
+        font-size: small;
+       
+    }
+    .About-container{
+        margin-top: 5rem;
+    }
+
+    .About{
+        background: linear-gradient(180deg, red,blue);
+        width: 300px;
+        font-size: small;
+        font-weight: 500;
+    }
+
+
+}

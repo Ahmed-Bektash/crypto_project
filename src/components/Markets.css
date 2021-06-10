@@ -1,0 +1,149 @@
+.Markets-wrapper{
+    padding-bottom: 2rem;
+    height: auto;
+    /* background: linear-gradient(to bottom, black 50% ,gray); */
+    background: black;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(to bottom,#171717, #050505,black);
+    /* margin-bottom: 1rem; */
+    }
+
+
+div h2{
+margin: 10px;
+align-self: flex-start;
+}
+
+/* .video-markets {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+    opacity: 50%;
+    margin: 0;
+    
+  } */
+
+.Markets{
+/* margin: 1rem; */
+padding:1rem;
+display: grid;
+grid-template-areas:" a  b"
+                    " c  d";
+grid-template-columns: repeat(autofit,minmax(240px,1fr));
+gap: 1rem;
+/* background: black; */
+
+border-style: solid;
+border-color: white;
+border-radius: 15px;
+border-width: 6px;
+gap:0.5rem;
+width: 100%;
+height:400px;
+overflow: hidden;
+
+
+}
+.part-title{
+color:white;
+text-align: center;
+margin: 1rem;
+}
+
+.Markets-image{
+    width: auto;
+    /* position: absolute; */
+    margin: 0;
+    height: 150px;
+    /* padding:1rem; */
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+  
+  }
+
+  .Markets-image:hover{
+    transform: scale(1.1);
+    
+  }
+
+  .Markets-container{
+      width: 80%;
+  }
+
+.market{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+p{
+    margin: 0.5rem;
+    color:white;
+    font-size: large;
+
+}
+
+div>h1{
+    color:white;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .Markets{
+        /* background: black;
+        border-style: solid;
+        border-color: gray;
+        border-radius: 15px;
+        border-width: 6px; */
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        height: auto;
+     
+        
+    }
+
+    .Markets-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        /* background: linear-gradient(to bottom, black 50% ,gray 80%, rgb(207, 199, 199) 100%); */
+        background: black;
+       
+    }
+    .Markets-container{
+        margin-top: 5rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .market>h1{
+        font-size: xx-large;
+    }
+
+    .market>p{
+        font-size: small;
+       
+    }
+    .Markets-image{
+        width: auto;
+        /* position: absolute; */
+        margin: 0;
+        height: 100px;
+        /* padding:1rem; */
+        border-radius: 15px;
+      
+      }
+    
+    
+
+
+}
