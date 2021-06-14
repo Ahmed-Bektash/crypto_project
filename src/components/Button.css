@@ -37,9 +37,7 @@
 .btn--large:hover,
 .btn--medium:hover {
   transition: all 0.5s ease-out;
-  /* background: #fff; */
-  /* color: #242424; */
-  background-image: linear-gradient(to right,orange,red,blue,yellow);
+  background-image: linear-gradient(to right,orange,red,yellow);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;

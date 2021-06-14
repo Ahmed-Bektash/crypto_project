@@ -12,7 +12,6 @@ function Markets() {
 
     return (
         <div className="Markets-wrapper" id="Markets">
-            {/* <video src='/videos/video-1.mp4' autoPlay loop muted playsinline className='video-markets'/> */}
             <img src='/images/stocks.jpg' alt ='hero' className='background-image'/>
             <div className="Markets-container" data-aos="fade-up" data-aos-delay="150"  data-aos-duration="800">
                 

@@ -1,14 +1,11 @@
 .Markets-wrapper{
     padding-bottom: 2rem;
     height: auto;
-    /* background: linear-gradient(to bottom, black 50% ,gray); */
     background: black;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     position: relative;
     background: linear-gradient(to bottom,#171717, #050505,black);
-    /* margin-bottom: 1rem; */
     }
 
 
@@ -17,27 +14,13 @@ margin: 10px;
 align-self: flex-start;
 }
 
-/* .video-markets {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 0;
-    opacity: 50%;
-    margin: 0;
-    
-  } */
-
 .Markets{
-/* margin: 1rem; */
 padding:1rem;
 display: grid;
 grid-template-areas:" a  b"
                     " c  d";
 grid-template-columns: repeat(autofit,minmax(240px,1fr));
 gap: 1rem;
-/* background: black; */
-
 border-style: solid;
 border-color: white;
 border-radius: 15px;
@@ -46,7 +29,6 @@ gap:0.5rem;
 width: 100%;
 height:400px;
 overflow: hidden;
-
 
 }
 .part-title{
@@ -57,10 +39,8 @@ margin: 1rem;
 
 .Markets-image{
     width: auto;
-    /* position: absolute; */
     margin: 0;
     height: 150px;
-    /* padding:1rem; */
     border-radius: 15px;
     transition: all 0.3s ease-in-out;
   
@@ -77,7 +57,6 @@ margin: 1rem;
 
 .market{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     
 }
@@ -93,21 +72,15 @@ div>h1{
     color:white;
 }
 
+/************************Media Queries************************/
 
 @media screen and (max-width: 960px) {
 
     .Markets{
-        /* background: black;
-        border-style: solid;
-        border-color: gray;
-        border-radius: 15px;
-        border-width: 6px; */
         display: flex;
         flex-direction: column;
         justify-content:space-around;
         height: auto;
-     
-        
     }
 
     .Markets-wrapper{
@@ -115,7 +88,6 @@ div>h1{
         flex-direction: column;
         align-items: center;
         height: auto;
-        /* background: linear-gradient(to bottom, black 50% ,gray 80%, rgb(207, 199, 199) 100%); */
         background: black;
        
     }
@@ -135,15 +107,10 @@ div>h1{
     }
     .Markets-image{
         width: auto;
-        /* position: absolute; */
         margin: 0;
         height: 100px;
-        /* padding:1rem; */
         border-radius: 15px;
       
       }
-    
-    
-
 
 }

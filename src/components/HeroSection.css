@@ -1,19 +1,6 @@
 *{
   box-sizing: border-box;
-  /* overflow: hidden; */
 }
-
-/* .video-hero {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 0;
-  opacity: 100%;
-  margin: 0;
-  top:0;
-  left:0;
-} */
 
 .hero_image{
   background-repeat: no-repeat;
@@ -23,14 +10,11 @@
   position: absolute;
   z-index:1;
   opacity: 1;
-  margin: 0;
-  
-  
+  margin: 0; 
 
 }
 
 .hero-container {
-  /* background: url('/images/Hero_image.jpeg') center center/cover no-repeat; */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -39,16 +23,12 @@
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
-  
-  
-
 
 }
 
 
 
 .hero-container > h1 {
-  /* color: #fff; */
   background-color: black;
   background-image: linear-gradient(to right,yellow,red,blue,green);
   background-size: 100%;
@@ -89,13 +69,8 @@
   z-index: 5;
 }
 
-.fa-play-circle {
-  margin-left: 4px;
-  z-index: 5;
-}
 
 .hero-gamepad{
-  /* color: gray; */
   margin-bottom: 10rem;
   font-size:200px;
   background-image: linear-gradient(to right,yellow,red,blue);
@@ -107,10 +82,13 @@
   z-index: 5;
  }
 
+ 
+/************************Media Queries************************/
+
+
 @media screen and (max-width: 1200px) {
   .hero_image{
-    height: 100vh;
-    
+    height: 100vh; 
   }
 
   .hero-container > h1 {
@@ -120,7 +98,6 @@
 }
 
 @media screen and (max-width: 875px) {
-  
   .hero_image{
     height: 100vh;
   }
@@ -145,8 +122,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  
-  
+
   .hero-container > h1 {
     font-size: 40px;
     margin-top: -100px;

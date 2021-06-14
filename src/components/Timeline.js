@@ -22,35 +22,18 @@ function Timeline(){
 
     useLayoutEffect(() => {
         const topPos = element => element.getBoundingClientRect().top;
-        // function isElementInViewport(element) {
-        //     var rect = element.getBoundingClientRect();
-        //     // console.log(rect);
-        //     return (
-        //       rect.top >= 0 &&
-        //       rect.left >= 0 &&
-        //       rect.bottom <=
-        //         (window.innerHeight || document.documentElement.clientHeight) &&
-        //       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        //     );
-        //   }
+      
         const item1Pos = topPos(MileStone1.current);
         const item2Pos = topPos(MileStone2.current);
         const item3Pos = topPos(MileStone3.current);
         const item4Pos = topPos(MileStone4.current);
         const item5Pos = topPos(MileStone5.current);
-
-        // console.log(item1Pos,item2Pos,item3Pos,item4Pos,item5Pos);
-        
-
-       
          
     
         const onScroll = () => {
-            // console.log("inside scroll function")
-            // console.log(item1Pos,item2Pos,item3Pos,item4Pos,item5Pos);
+          
           const scrollPos = window.scrollY + window.innerHeight;
-        //   console.log("The scroll position:",scrollos);
-        //   console.log("The item position:",item1Pos);  P
+        
           if (scrollPos - item1Pos > 300) {
             setShow(state => ({ ...state, MileStone_one: true })); //put the spread operator for state here to avoid a large amount of unnecessary renders
           }  
@@ -67,7 +50,6 @@ function Timeline(){
             setShow(state => ({ ...state, MileStone_five: true }));
           }
         };
-        // console.log(show.MileStone_one,show.MileStone_two,show.MileStone_three,show.MileStone_four,show.MileStone_five);
     
         window.addEventListener("scroll", onScroll);
         return () => window.removeEventListener("scroll", onScroll); //important for memory leaks
@@ -104,14 +86,14 @@ function Timeline(){
     return(
       <section className="Timeline" id='Timeline'>
          <div className='timeline-overlay'></div>
-        <video src='/videos/video-1.mp4' autoPlay loop muted playsinline className='video-Timeline'/>
+        <video src='/videos/video-1.mp4' autoPlay loop muted playsInline className='video-Timeline'/>
        
         
         <h1 className='timeline-heading'> Our Timeline</h1>
         <ul>
         
           <li ref={MileStone1} className={`${show.MileStone_one ? " in-view" : ""}`}>
-          
+           
             <div>
               <time>June 2021</time> 
               <img src="/images/team.jpg" alt="launch" className='Timeline-Image'></img>
@@ -126,7 +108,7 @@ function Timeline(){
               <p className='subtext'> The coin is launched on coin base </p> 
             </div>
           </li>
-          {/* <li ref={listItem}> */}
+      
           <li ref={MileStone3} className={`${show.MileStone_three ? " in-view" : ""}`}>
             <div>
               <time>August 2021</time> 

@@ -18,7 +18,7 @@ function Tokenomics() {
         AOS.init();
     },[]);
     
-    
+    /************************Logic for adjusting for mobile************************/
     useLayoutEffect(()=>{
 
         const calculateMobileWidth=()=>{
@@ -46,6 +46,9 @@ function Tokenomics() {
         
           
     },[]);
+
+
+    /************************Chart data************************/
     const FirstchartData = {
         labels: ['circulating supply', 'initial burn', 'Burned so far'],
         datasets: [
@@ -110,11 +113,12 @@ function Tokenomics() {
          }
       };
 
+
+/************************Rendering************************/
      
 
     return (
         <div className='Tokenomics-wrapper' id='Tokenomics'>
-          {/* <video src='/videos/video-1.mp4' autoPlay loop muted playsinline className='video-tokenomics'/> */}
           <img src='/images/game-over.jpg' alt ='hero' className='background-image'/>
           
 

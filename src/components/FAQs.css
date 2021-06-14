@@ -1,3 +1,5 @@
+
+/************************General FAQ section************************/
 .faq-heading{
     padding-top:3rem;
     color: white;
@@ -16,7 +18,7 @@
 }
 
 .faqs{
-    
+   
     position: relative;
     color: white;
     z-index: 6;
@@ -24,20 +26,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* align-items: center; */
     padding:2rem;
     height:auto;
-    /* border-style: solid; */
-    /* border-radius: 15px; */
-    /* border-color: gray; */
-    /* background:black; */
     width: 100%;
     background: linear-gradient(to bottom,#191919,#171717);
-    /* border-radius: 15px;
-    border-style: solid;
-    border-color:gray; */
-  
-    
     
 }
 
@@ -46,10 +38,6 @@
    padding-bottom:1rem;
    padding-right:1rem;
    padding-left:1rem;
-   /* border-style:solid; */
-    /* border-color: gray; */
-    /* background:gray; */
-    /* background: linear-gradient(to bottom,#050505, #171717); */
     border-radius: 15px;
     max-height:60px;
     transition: max-height 0.3s ease-in-out;
@@ -57,18 +45,14 @@
     z-index: 99;
 }
 
-
+/************************EFFECTS************************/
 .ques-show{
-    /* transform:translateY(0); */
     max-height:500px;
-    transition: max-height 0.3s ease-in-out;
-
-    
+    transition: max-height 0.3s ease-in-out; 
 }
 
 .ans-hide{
   visibility: hidden;
-  /* display:hidden; */
   opacity: 0;
   transition: all 0.5s ease-in-out;
   transform: translate3d(0, -50px, 0);
@@ -78,18 +62,15 @@
 .ans-show{
   transform: none;
   visibility: visible;
-  /* display:block; */
   opacity: 1;
   transition: all 0.5s ease-in-out;
   transform: 0;
- 
 }
 
 .faq-ques{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transform:translateY(30px); */
     transition: all 0.5s ease-in-out;
     margin:0.7rem;
 }
@@ -101,6 +82,8 @@
     margin-left: 20px;
     color: green;
 }
+
+/************************Media Queries************************/
 
 @media screen and (max-width: 960px) {
 

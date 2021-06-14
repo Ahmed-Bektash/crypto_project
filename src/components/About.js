@@ -14,11 +14,11 @@ function About(){
 
 return(
 <section className="About-wrapper" id='About'>
-{/* <video src='/videos/video-1.mp4' autoPlay loop muted playsinline className='video-hero'/> */}
-{/* <img src='/images/gaming-1.jpg' alt ='hero' className='background-image'/>
-<div className='about-overlay'></div> */}
-
     
+<div className='about-overlay'></div>
+
+    {/*********************** Stats section **********************************************/}
+
 <div className="Stats-container" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="800">
 
     <h1 className="part-title"> Our Stats</h1>
@@ -48,12 +48,14 @@ return(
     <div className="stat">
 
     <h1> 20K </h1>
-    <p>Discourd and Telegram followers</p>
+    <p>Discord and Telegram followers</p>
    
     </div>
     
     </article>
 </div>
+
+ {/*********************** About section **********************************************/}
 
 <div className="About-container" data-aos="fade-down"  data-aos-delay="100"  data-aos-duration="800">
 

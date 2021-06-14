@@ -3,9 +3,8 @@ import'./FAQs.css';
 
 
 
-
-
 function Faq({question,answer}) {
+    
     const [show,setShow]=useState(false);
 
     
