@@ -26,7 +26,7 @@ function Tokenomics() {
     
             if(mobWidth<960){
                 setDesiredWidth(true);
-                setWidth(400);
+                setWidth(350);
                 
             }else if(mobWidth >=960){
                 setDesiredWidth(false);
@@ -146,7 +146,7 @@ function Tokenomics() {
 
                 </div>
 
-                <div className='supply-text' data-aos="fade-right" data-aos-delay="500"  data-aos-duration="800">
+                <div className='supply-text' data-aos="fade-right" data-aos-delay="300"  data-aos-duration="800">
                     <h1>The circulating supply is 500,000</h1>
                     <h1>The initial burn is 400,000</h1>
                     <h1>what is burnt so far is 30,000</h1>

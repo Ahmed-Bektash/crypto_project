@@ -17,6 +17,19 @@
     opacity: 1;
     }
 
+    .video-About {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -2;
+        opacity: 0.9;
+        margin: 0;
+        top:0;
+        left:0;
+    
+      }
+
     /************************About section************************/
 .About{
 margin: 1rem;
@@ -30,10 +43,16 @@ border-radius: 10px;
 max-width: 800px;
 z-index: 5;
 }
-div h2{
+.About-container h2{
 margin: 10px;
 align-self: flex-start;
+color:white;
 }
+
+.About-container h3{
+   color:white;
+    }
+
 
 .values, .values Li{
     list-style-type: none;
@@ -59,6 +78,12 @@ border-radius: 10px;
 gap:0.5rem;
 
 }
+
+.Stats-container h2{
+    margin: 10px;
+    align-self: flex-start;
+}
+
 .part-title{
 color:white;
 text-align: center;
@@ -83,7 +108,7 @@ p{
 
 }
 
-div>h1{
+.About-wrapper>h1{
     color:white;
 }
 

@@ -24,21 +24,12 @@
 .Timeline{
 padding-top: 4rem;
 position: relative;
+color: var(--background);
+padding-bottom: 50px;
 
 }
 
- .video-Timeline {
-        object-fit: cover;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        z-index: -2;
-        opacity: 0.9;
-        margin: 0;
-        top:0;
-        left:0;
-    
-      }
+ 
 
       .timeline-overlay{
         position: absolute;
@@ -51,10 +42,7 @@ position: relative;
       }
 
 
-section {
-  color: var(--background);
-  padding-bottom: 50px;
-}
+
 
 .Timeline-Image{
   margin-left: 1rem;

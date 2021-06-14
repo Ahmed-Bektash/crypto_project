@@ -86,7 +86,7 @@ function Timeline(){
     return(
       <section className="Timeline" id='Timeline'>
          <div className='timeline-overlay'></div>
-        <video src='/videos/video-1.mp4' autoPlay loop muted playsInline className='video-Timeline'/>
+        
        
         
         <h1 className='timeline-heading'> Our Timeline</h1>
@@ -96,7 +96,7 @@ function Timeline(){
            
             <div>
               <time>June 2021</time> 
-              <img src="/images/team.jpg" alt="launch" className='Timeline-Image'></img>
+              {/* <img src="/images/team.jpg" alt="launch" className='Timeline-Image'></img> */}
               <p className='subtext'>GC landing page is launched</p>
             </div>
           </li>
@@ -104,7 +104,7 @@ function Timeline(){
             
             <div>
               <time>July 2021</time>
-              <img src="/images/tokenomics.jpg" alt="launch" className='Timeline-Image'></img>
+              {/* <img src="/images/tokenomics.jpg" alt="launch" className='Timeline-Image'></img> */}
               <p className='subtext'> The coin is launched on coin base </p> 
             </div>
           </li>
@@ -112,7 +112,7 @@ function Timeline(){
           <li ref={MileStone3} className={`${show.MileStone_three ? " in-view" : ""}`}>
             <div>
               <time>August 2021</time> 
-              <img src="/images/stocks.jpg" alt="launch" className='Timeline-Image'></img>
+              {/* <img src="/images/stocks.jpg" alt="launch" className='Timeline-Image'></img> */}
               <p className='subtext'> Markets open and GC goes to the moon </p>
             </div>
           </li>
@@ -120,14 +120,14 @@ function Timeline(){
             
             <div>
               <time>August 2021</time> 
-              <img src="/images/gaming.jpg" alt="launch" className='Timeline-Image'></img>
+              {/* <img src="/images/gaming.jpg" alt="launch" className='Timeline-Image'></img> */}
               <p className='subtext'> First tournament is launched and gamers buy GC </p>
             </div>
           </li>
           <li ref={MileStone5} className={`${show.MileStone_five ? " in-view" : ""}`}>
             <div>
             <time>August 2021</time> 
-              <img src="/images/road.jpg" alt="launch" className='Timeline-Image'></img>
+              {/* <img src="/images/road.jpg" alt="launch" className='Timeline-Image'></img> */}
               <p className='subtext'> The road ahead is positive </p>
               </div>
           </li>

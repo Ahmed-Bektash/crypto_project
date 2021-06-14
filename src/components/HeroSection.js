@@ -20,7 +20,7 @@ function HeroSection() {
         <Button
           className='btns'
           buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonSize='btn--medium'
           path='/#About'
         >
           About Our Coin
@@ -28,7 +28,7 @@ function HeroSection() {
         <Button
           className='btns'
           buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonSize='btn--medium'
           path='/#Tokenomics'
          
         >
@@ -37,7 +37,7 @@ function HeroSection() {
         <Button
           className='btns'
           buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonSize='btn--medium'
           path='/#Timeline'
           
         >
@@ -47,7 +47,7 @@ function HeroSection() {
         <Button
           className='btns'
           buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonSize='btn--medium'
           path='/#Markets'
         
         >
@@ -56,7 +56,7 @@ function HeroSection() {
         <Button
           className='btns'
           buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonSize='btn--medium'
           path='/#FAQ'
         
         >
