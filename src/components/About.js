@@ -14,9 +14,9 @@ function About(){
 
 return(
 <section className="About-wrapper" id='About'>
-<video src='/videos/video-1.mp4' className='video-About' type="video/mp4" autoPlay loop muted playsInline />
-<div className='about-overlay'></div>
 
+<div className='about-overlay'></div>
+<video src='/videos/video-1.mp4' className='video-About' type="video/mp4" autoPlay loop muted playsInline />
 
     {/*********************** Stats section **********************************************/}
 
