@@ -1,77 +1,38 @@
-*{
-  box-sizing: border-box;
-}
-
-.hero_image{
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index:1;
-  opacity: 1;
-  margin: 0; 
-
-}
 
 .hero-container {
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
-  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
   object-fit: contain;
 
 }
 
+.hero_image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index:1; 
 
-
-.hero-container > h1 {
-  background-color: black;
-  background-image: linear-gradient(to right,yellow,red,blue,green);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-size: 100px;
-  margin-top: -100px;
-  z-index: 5;
 }
 
-.overlay{
+.hero-overlay{
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to bottom,#17171700,#1b1b1b 90%);
   z-index: 2;
   opacity: 0.9;
 }
 
-.hero-container > p {
-  margin-top: 8px;
-  color: #fff;
-  font-size: 32px;
-  z-index: 5;
-}
-
-.hero-btns {
-  margin-top: 32px;
-  z-index: 5;
-}
-
-.hero-btns .btn {
-  margin: 6px;
-  z-index: 5;
-}
-
-
 .hero-gamepad{
   margin-bottom: 10rem;
   font-size:200px;
-  background-image: linear-gradient(to right,yellow,red,blue);
+  background-image: linear-gradient(to right,yellow,red,purple);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -80,78 +41,90 @@
   z-index: 5;
  }
 
- 
+
+.hero-btns {
+  margin-top: 32px;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-title{
+  background-image: linear-gradient(to right,yellow,red,purple);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.Hero-subtitle{
+  color: white;
+}
+
+
+
 /************************Media Queries************************/
 
 
-@media screen and (max-width: 1200px) {
-  .hero_image{
-    height: 100vh; 
+@media screen and (min-width: 1200px) {
+  
+  .page-title {
+    font-size: 100px;
+    margin-top: -100px;
   }
-
-  .hero-container > h1 {
-    font-size: 70px;
-    margin-top: -150px;
+  
+  .Hero-subtitle {
+    margin-top: 1rem;
+    font-size: 2rem;
   }
+  
 }
 
 @media screen and (max-width: 875px) {
 
-  .hero_image{
-    height: 100%;
+ 
+  .hero-gamepad{
+    font-size:150px;
+    margin-bottom: 7rem;
   }
+
+  .page-title{
+    margin-top: -100px;
+  }
+  
+  
+
+}
+
+
+@media screen and (max-width: 550px) {
 
   .hero-gamepad{
     font-size:150px;
     margin-bottom: 7rem;
   }
-  
-  .hero-container > h1 {
-    font-size: 60px;
+
+  .page-title{
     margin-top: -100px;
   }
 
-  .hero-container > p {
-    font-size: 30px;
-  }
-
-  .btn-mobile {
-    display: block;
+  .hero-btns {
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
   }
 
-  .btn {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 650px) {
-
-  .hero-container > h1 {
-    font-size: 50px;
-    margin-top: -100px;
-  }
-}
-
-@media screen and (max-width: 510px) {
-  
-  .hero-container > p {
-    font-size: 25px;
+  .btn-mobile {
+  display: block;
+  text-decoration: none;
   }
 
-  .hero-container > h1 {
-    font-size: 40px;
-    margin-top: -100px;
+  .btn{
+  width:10rem;
   }
+
 }
-@media screen and (max-width: 400px) {
-  
-  .hero-container > p {
-    font-size: 15px;
-  }
-  
-  .hero-container > h1 {
-    font-size: 30px;
-    margin-top: -100px;
-  }
-}
+
+

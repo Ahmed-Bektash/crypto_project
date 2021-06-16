@@ -1,31 +1,25 @@
-:root {
-  --primary: #fff;
-}
-
-.btn {
-  padding: 8px 20px;
-  border-radius: 2px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
 
 .btn--primary {
-  background-color: var(--primary);
+  background-color: var(--btn);
   color: #242424;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--btn);
 }
 
 .btn--outline {
   background-color: transparent;
   color: #fff;
   padding: 8px 20px;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--btn);
   transition: all 0.3s ease-out;
 }
 
 .btn--medium {
-  padding: 8px 20px;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.btn--small {
+  padding: 5px;
   font-size: 18px;
 }
 
@@ -35,7 +29,8 @@
 }
 
 .btn--large:hover,
-.btn--medium:hover {
+.btn--medium:hover,
+.btn--small:hover {
   transition: all 0.5s ease-out;
   background-image: linear-gradient(to right,orange,red,yellow);
   background-size: 100%;
@@ -45,3 +40,4 @@
   -moz-text-fill-color: transparent;
   transition: 250ms;
 }
+

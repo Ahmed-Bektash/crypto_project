@@ -10,10 +10,10 @@ function HeroSection() {
     <div className='hero-container' id='Home'>
     
       <img src='/images/laptop.jpg' alt ='hero' className='hero_image'/>
-      <div className='overlay'></div>
+      <div className='hero-overlay'></div>
       <i  className='fas fa-gamepad hero-gamepad' />
-     <h1>Your favorite gaming coin</h1>
-      <p>What are you waiting for?</p>
+     <h1 className="page-title">Your favorite gaming coin</h1>
+      <h2 className="Hero-subtitle">What are you waiting for?</h2>
      
      {/* Buttons section */}
       <div className='hero-btns'>

@@ -1,47 +1,17 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --Primary: gray;
-  --secondary:blue ;
-  --background: #d8e3e7;
-}
 
 .timeline-heading {
-  z-index: 999;
-  padding-top: 1rem;
+  z-index: 5;
   color: white;
   font-size: 2.5rem;
   text-align: center;
- 
+  margin-top: 2rem;
 }
+
 
 .Timeline{
-padding-top: 4rem;
 position: relative;
-color: var(--background);
-padding-bottom: 50px;
-
+height: auto;
 }
-
- 
-
-      .timeline-overlay{
-        position: absolute;
-        width: 100%;
-        height:255vh;
-        background: linear-gradient(to bottom,#191919,#171717,#191919);
-        z-index: -1;
-        opacity: 0.8;
-        top:0;
-      }
-
-
 
 
 .Timeline-Image{
@@ -57,10 +27,6 @@ padding-bottom: 50px;
     transform: scale(1.1);
   }
 
-a{
-  text-decoration: none;
-  color: var(--background);
-}
 
 .subtext{
   margin-top: 1rem;
@@ -71,7 +37,7 @@ a{
 }
 
 
-/* TIMELINE
+/* TIMELINE item design
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .Timeline ul {
@@ -84,7 +50,7 @@ a{
     width: 6px;
     margin: 0 auto;
     padding-top: 50px;
-    background: gray;
+    background: var(--Primary);
   }
 
   .Timeline ul li::after { /* what this does is create a pseudo element after the last child of the parent in this case the Li and then add the content property to it*/
@@ -105,7 +71,7 @@ a{
     bottom: 0;
     width: 400px;
     padding: 15px;
-    background:black;
+    background:#191919;
     border-style: solid;
     border-color: gray;
     border-radius: 15px;
@@ -148,10 +114,9 @@ a{
     font-weight: bold;
     margin-bottom: 8px;
     text-align: center;
-    border-radius: 5px;
     margin-bottom: 1rem;
     padding:5px;
-    background-image: linear-gradient(to right,#fb0094 0%,#0000ff 10%,#00ff00 20%,#ffff00 30%,#ff0000 40%,#fb0094 50%,#0000ff 60%,#00ff00 70%,#ffff00 80%,#ff0000 100%);
+    background-image: linear-gradient(to right,yellow,red,purple,blue);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -159,10 +124,10 @@ a{
     -moz-text-fill-color: transparent;
   }
 
-  /* EFFECTS
+  /* EFFECTS in case you want to do it manually
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.Timeline ul li::after {
+/* .Timeline ul li::after {
   transition: background 0.5s ease-in-out;
 }
 
@@ -187,22 +152,22 @@ a{
   transform: none;
   visibility: visible;
   opacity: 1;
-} 
+}  */
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
+
   .Timeline ul li div {
     width: 250px;
   }
-  .Timeline ul li:nth-child(even) div {
+
+  
+   .Timeline ul li:nth-child(even) div {
     left: -289px;
     /*250+45-6*/
   }
-}
-.timeline-overlay{
-  height: 300vh;
 }
 
 @media screen and (max-width: 600px) {

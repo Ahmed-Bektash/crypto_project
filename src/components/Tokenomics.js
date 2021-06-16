@@ -1,7 +1,6 @@
-import React,{useState,useLayoutEffect,useEffect} from 'react';
+import React,{useState,useLayoutEffect} from 'react';
 import {Pie} from 'react-chartjs-2';
 import './Tokenomics.css';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
@@ -12,11 +11,9 @@ import 'aos/dist/aos.css';
 function Tokenomics() {
     
     const [DesiredWidth,setDesiredWidth]=useState(false);
-    const[width,setWidth]=useState(600);
+    const[width,setWidth]=useState(500);
 
-    useEffect(()=>{
-        AOS.init();
-    },[]);
+  
     
     /************************Logic for adjusting for mobile************************/
     useLayoutEffect(()=>{
@@ -26,9 +23,14 @@ function Tokenomics() {
     
             if(mobWidth<960){
                 setDesiredWidth(true);
-                setWidth(350);
+                setWidth(300);
                 
-            }else if(mobWidth >=960){
+            }
+            if(mobWidth <350){
+              setDesiredWidth(true);
+              setWidth(250);
+
+          }else if(mobWidth >=960){
                 setDesiredWidth(false);
                 setWidth(500);
             }
@@ -99,9 +101,9 @@ function Tokenomics() {
              legend:{
                  position:`${DesiredWidth?'bottom':'right'}`,
                  labels:{
-                     padding:DesiredWidth?15:20,
+                     padding:DesiredWidth?12:15,
                      font:{
-                         size:DesiredWidth?12:20
+                         size:DesiredWidth?12:15
                      },
                      color: 'white'
                  }
@@ -119,12 +121,12 @@ function Tokenomics() {
 
     return (
         <div className='Tokenomics-wrapper' id='Tokenomics'>
-          <img src='/images/game-over.jpg' alt ='hero' className='background-image'/>
-          
+          <img src='/images/game-over.jpg' alt ='Tokenomics' className='background-image'/>
+          <div className='hero-overlay tokenomics-overlay'></div>
 
             <div className='supply-container'>
 
-                <div className='supply-text' data-aos="fade-right" data-aos-delay="500"  data-aos-duration="800">
+                <div className='supply-text' data-aos="zoom-in" data-aos-delay="500"  data-aos-duration="800">
                     <h1>The circulating supply is 500,000</h1>
                     <h1>The initial burn is 400,000</h1>
                     <h1>what is burnt so far is 30,000</h1>
@@ -146,7 +148,7 @@ function Tokenomics() {
 
                 </div>
 
-                <div className='supply-text' data-aos="fade-right" data-aos-delay="300"  data-aos-duration="800">
+                <div className='supply-text' data-aos="zoom-out" data-aos-delay="300"  data-aos-duration="800">
                     <h1>The circulating supply is 500,000</h1>
                     <h1>The initial burn is 400,000</h1>
                     <h1>what is burnt so far is 30,000</h1>

@@ -6,7 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['btn--medium', 'btn--large','btn--small'];
 
 const PATH = ['/#Home','/#About','/#Timeline','/#Markets','/#Tokenomics','/#FAQ']
 

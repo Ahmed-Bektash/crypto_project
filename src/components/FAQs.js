@@ -39,9 +39,9 @@ function FAQs() {
 
     return (
         <>
-        <h1 className='faq-heading' id='FAQ'> FAQs</h1>
-        <div className='faqs'>
         
+        <div className='faqs'>
+        <h1 className='faq-heading' id='FAQ'> F.A.Qs</h1>
 
              {data.map((item)=>( 
                        

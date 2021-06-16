@@ -20,53 +20,53 @@ return(
 
     {/*********************** Stats section **********************************************/}
 
-<div className="Stats-container" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="800">
+    <div className="Stats-container" data-aos="fade-up" data-aos-delay="100"  data-aos-duration="800">
 
-    <h1 className="part-title"> Our Stats</h1>
+        <h1 className="about-title"> Our Stats</h1>
 
-    <article className='Stats' >
+        <article className='Stats' >
 
-    <div className="stat">
+            <div className="stat">
 
-    <h1> 300k</h1>
-    <p>GC holders</p>
-   
+                <h1> 300k</h1>
+                <p>GC holders</p>
+            
+            </div>
+            
+            <div className="stat">
+
+                <h1> $ 200M </h1>
+                <p> Our market cap</p>
+            </div>
+            
+            <div className="stat">
+
+                <h1> 20 </h1>
+                <p> tournaments funded</p>
+        
+            </div>
+
+            <div className="stat">
+
+                <h1> 20K </h1>
+                <p>on Discord & Telegram</p>
+        
+            </div>
+        
+        </article>
     </div>
-    
-    <div className="stat">
-
-    <h1> $ 200M </h1>
-    <p> Our market cap</p>
-    </div>
-    
-    <div className="stat">
-
-    <h1> 20 </h1>
-    <p> gaming tournaments funded</p>
-   
-    </div>
-
-    <div className="stat">
-
-    <h1> 20K </h1>
-    <p>Discord and Telegram followers</p>
-   
-    </div>
-    
-    </article>
-</div>
 
  {/*********************** About section **********************************************/}
 
 <div className="About-container" data-aos="fade-down"  data-aos-delay="100"  data-aos-duration="800">
 
-<h1 className="part-title"> About Us</h1>
+<h1 className="about-title"> About Us</h1>
 
     <article className="About">
 
-    <p> GC is a coin made by gamers for gamers, it's aim is to support the gaming tounrament space and provide gamers with a community through which they can have a good time and get rich</p>
+        <p> GC is a coin made by gamers for gamers, it's aim is to support the gaming tounrament space and provide gamers with a community through which they can have a good time and get rich</p>
 
-    <h2> Our values</h2>
+        <h2> Our values</h2>
 
         <ul className="values">
             

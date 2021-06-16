@@ -5,55 +5,55 @@ import './Timeline.css';
 
 function Timeline(){
 
-    const [show,setShow]=useState({
-        MileStone_one:false,
-        MileStone_two:false,
-        MileStone_three:false,
-        MileStone_four:false,
-        MileStone_five:false
-    }); //useState will help control whether or not each milestone is shown
+    // const [show,setShow]=useState({
+    //     MileStone_one:false,
+    //     MileStone_two:false,
+    //     MileStone_three:false,
+    //     MileStone_four:false,
+    //     MileStone_five:false
+    // }); //useState will help control whether or not each milestone is shown
 
-    //use ref for each element of the timeline
-    const MileStone1= useRef(null);
-    const MileStone2= useRef(null);
-    const MileStone3= useRef(null);
-    const MileStone4= useRef(null);
-    const MileStone5= useRef(null);
+    // //use ref for each element of the timeline
+    // const MileStone1= useRef(null);
+    // const MileStone2= useRef(null);
+    // const MileStone3= useRef(null);
+    // const MileStone4= useRef(null);
+    // const MileStone5= useRef(null);
 
-    useLayoutEffect(() => {
-        const topPos = element => element.getBoundingClientRect().top;
+    // useLayoutEffect(() => {
+    //     const topPos = element => element.getBoundingClientRect().top;
       
-        const item1Pos = topPos(MileStone1.current);
-        const item2Pos = topPos(MileStone2.current);
-        const item3Pos = topPos(MileStone3.current);
-        const item4Pos = topPos(MileStone4.current);
-        const item5Pos = topPos(MileStone5.current);
+    //     const item1Pos = topPos(MileStone1.current);
+    //     const item2Pos = topPos(MileStone2.current);
+    //     const item3Pos = topPos(MileStone3.current);
+    //     const item4Pos = topPos(MileStone4.current);
+    //     const item5Pos = topPos(MileStone5.current);
          
     
-        const onScroll = () => {
+    //     const onScroll = () => {
           
-          const scrollPos = window.scrollY + window.innerHeight;
+    //       const scrollPos = window.scrollY + window.innerHeight;
         
-          if (scrollPos - item1Pos > 300) {
-            setShow(state => ({ ...state, MileStone_one: true })); //put the spread operator for state here to avoid a large amount of unnecessary renders
-          }  
-        if (scrollPos - item2Pos > 500) {
-            setShow(state => ({ ...state, MileStone_two: true }));
-          } 
-           if (scrollPos - item3Pos > 500) {
-            setShow(state => ({ ...state, MileStone_three: true }));
-          } 
-          if (scrollPos - item4Pos > 600) {
-            setShow(state => ({ ...state, MileStone_four: true }));
-          } 
-          if (scrollPos - item5Pos > 800) {
-            setShow(state => ({ ...state, MileStone_five: true }));
-          }
-        };
+    //       if (scrollPos - item1Pos > 300) {
+    //         setShow(state => ({ ...state, MileStone_one: true })); //put the spread operator for state here to avoid a large amount of unnecessary renders
+    //       }  
+    //     if (scrollPos - item2Pos > 500) {
+    //         setShow(state => ({ ...state, MileStone_two: true }));
+    //       } 
+    //        if (scrollPos - item3Pos > 500) {
+    //         setShow(state => ({ ...state, MileStone_three: true }));
+    //       } 
+    //       if (scrollPos - item4Pos > 600) {
+    //         setShow(state => ({ ...state, MileStone_four: true }));
+    //       } 
+    //       if (scrollPos - item5Pos > 800) {
+    //         setShow(state => ({ ...state, MileStone_five: true }));
+    //       }
+    //     };
     
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll); //important for memory leaks
-      }, []);
+    //     window.addEventListener("scroll", onScroll);
+    //     return () => window.removeEventListener("scroll", onScroll); //important for memory leaks
+    //   }, []);
       
 
 /*********************************************************************BELOW HERE FOR ONE ITEM ONLY***************************************/
@@ -85,23 +85,20 @@ function Timeline(){
 /*********************************************************************ABOVE HERE FOR ONE ITEM ONLY***************************************/
     return(
       <section className="Timeline" id='Timeline'>
-         <div className='timeline-overlay'></div>
-        
        
         
         <h1 className='timeline-heading'> Our Timeline</h1>
         <ul>
-        
-          <li ref={MileStone1} className={`${show.MileStone_one ? " in-view" : ""}`}>
-           
+          {/* <li ref={MileStone1} className={`${show.MileStone_one ? " in-view" : ""}`} > */}
+          <li  className= 'timeline-item' data-aos="zoom-in" data-aos-delay="350"  data-aos-duration="800" >
             <div>
               <time>June 2021</time> 
               {/* <img src="/images/team.jpg" alt="launch" className='Timeline-Image'></img> */}
               <p className='subtext'>GC landing page is launched</p>
             </div>
           </li>
-          <li ref={MileStone2} className={`${show.MileStone_two ? " in-view" : ""}`}>
-            
+          {/* <li ref={MileStone2} className={`${show.MileStone_two ? " in-view" : ""}`}> */}
+          <li  className= 'timeline-item' data-aos="zoom-in" data-aos-delay="350"  data-aos-duration="600" >
             <div>
               <time>July 2021</time>
               {/* <img src="/images/tokenomics.jpg" alt="launch" className='Timeline-Image'></img> */}
@@ -109,22 +106,24 @@ function Timeline(){
             </div>
           </li>
       
-          <li ref={MileStone3} className={`${show.MileStone_three ? " in-view" : ""}`}>
+          {/* <li ref={MileStone3} className={`${show.MileStone_three ? " in-view" : ""}`}> */}
+          <li  className= 'timeline-item' data-aos="zoom-in" data-aos-delay="350"  data-aos-duration="600" >
             <div>
               <time>August 2021</time> 
               {/* <img src="/images/stocks.jpg" alt="launch" className='Timeline-Image'></img> */}
               <p className='subtext'> Markets open and GC goes to the moon </p>
             </div>
           </li>
-          <li ref={MileStone4} className={`${show.MileStone_four ? " in-view" : ""}`}>
-            
+          {/* <li ref={MileStone4} className={`${show.MileStone_four ? " in-view" : ""}`}> */}
+          <li  className= 'timeline-item' data-aos="zoom-in" data-aos-delay="350"  data-aos-duration="600" >
             <div>
               <time>August 2021</time> 
               {/* <img src="/images/gaming.jpg" alt="launch" className='Timeline-Image'></img> */}
               <p className='subtext'> First tournament is launched and gamers buy GC </p>
             </div>
           </li>
-          <li ref={MileStone5} className={`${show.MileStone_five ? " in-view" : ""}`}>
+          {/* <li ref={MileStone5} className={`${show.MileStone_five ? " in-view" : ""}`}> */}
+          <li  className= 'timeline-item' data-aos="zoom-in" data-aos-delay="350"  data-aos-duration="600" >
             <div>
             <time>August 2021</time> 
               {/* <img src="/images/road.jpg" alt="launch" className='Timeline-Image'></img> */}
