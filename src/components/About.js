@@ -16,7 +16,7 @@ return(
 <section className="About-wrapper" id='About'>
 
 <div className='about-overlay'></div>
-<video  className='video-About' autoplay loop muted playsInline > <source src={'/videos/video-1.mp4'} type='video/mp4' /> </video>
+<video  className='video-About' autoPlay loop muted playsInline > <source src={'/videos/video-1.mp4'} type='video/mp4' /> </video>
 
     {/*********************** Stats section **********************************************/}
 
