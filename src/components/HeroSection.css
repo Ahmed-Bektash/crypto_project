@@ -83,7 +83,11 @@
 
 @media screen and (max-width: 875px) {
 
- 
+  .hero_image{
+    object-fit: cover;
+  }
+
+
   .hero-gamepad{
     font-size:150px;
     margin-bottom: 7rem;
