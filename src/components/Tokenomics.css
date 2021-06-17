@@ -31,16 +31,20 @@
     }
 
 .supply-text{
-background-image: linear-gradient(to right,orange,red,purple);
-background-size: 100%;
--webkit-background-clip: text;
--moz-background-clip: text;
--webkit-text-fill-color: transparent;
--moz-text-fill-color: transparent;
 
-z-index: 5;
+z-index:5;
 
 }
+
+.supply-text h1{
+    background-image: linear-gradient(to right,orange,red,purple);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  
+    }
 
 .pie{
 position: relative;  
@@ -62,9 +66,11 @@ z-index: 5;
         justify-content:space-between;
         z-index:5;
         }
+
     .supply-text h1{
       margin:0.4rem;
       font-size: 18px;
+     
     }
       
 }

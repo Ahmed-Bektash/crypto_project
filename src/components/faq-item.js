@@ -21,7 +21,7 @@ const HandleClick = ()=>{
                     
                     <h1 className='question-text'>{question}</h1> 
 
-                    <i class={`fas fa-${show?'minus':'plus'} quesToggle`} onClick={HandleClick}></i>
+                    <i className={`fas fa-${show?'minus':'plus'} quesToggle`} onClick={HandleClick}></i>
 
                 </div>
                 
