@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.css';
+import '../styles/Button.css';
 import { HashLink as Link } from 'react-router-hash-link';
 
 /***************Here we set the types of buttons to make the file more maintainable***********************/

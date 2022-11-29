@@ -1,0 +1,87 @@
+.Markets-wrapper{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    justify-content: space-around;
+    }
+
+.markets-background-img{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    }
+    
+.Markets-container{
+    width: 90%;
+    z-index: 5;
+    }
+
+.markets-title{
+        color:white;
+        text-align: center;
+        margin: 2rem;
+        
+    }
+
+
+.Markets{
+    padding:1rem;
+    display: grid;
+    grid-template-areas:" a  b"
+                        " c  d";
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    border-width: 6px;
+    gap:1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.Markets-image{
+    margin: 0;
+    height: 150px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+      
+    }
+    
+.Markets-image:hover{
+    transform: scale(1.1);
+        
+    }
+
+
+.market{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/************************Media Queries************************/
+
+@media screen and (max-width: 800px) {
+
+    
+    .Markets{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        height: auto;
+        width: 80%;
+        margin:2rem;
+    }
+
+    .Markets-image{
+        height: 100px;
+      }
+
+}

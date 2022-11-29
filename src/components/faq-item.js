@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import'./FAQs.css';
+import'../styles/FAQs.css';
 
 
 

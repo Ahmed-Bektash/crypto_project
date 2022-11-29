@@ -1,6 +1,6 @@
 import React,{useState,useLayoutEffect} from 'react';
 import {Pie} from 'react-chartjs-2';
-import './Tokenomics.css';
+import '../styles/Tokenomics.css';
 import 'aos/dist/aos.css';
 
 

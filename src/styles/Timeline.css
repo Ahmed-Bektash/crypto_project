@@ -1,0 +1,189 @@
+
+.timeline-heading {
+  z-index: 5;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+.Timeline{
+position: relative;
+height: auto;
+}
+
+
+.Timeline-Image{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 90%;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+
+  
+.Timeline-Image:hover {
+    transform: scale(1.1);
+  }
+
+
+.subtext{
+  margin-top: 1rem;
+  padding:5px;
+  text-align: center;
+  background-image: linear-gradient(to right, red , blue);
+  border-radius: 5px;
+}
+
+
+/* TIMELINE item design
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.Timeline ul {
+    padding: 50px 0;
+  }
+  
+  .Timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: var(--Primary);
+  }
+
+  .Timeline ul li::after { /* what this does is create a pseudo element after the last child of the parent in this case the Li and then add the content property to it*/
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--secondary);
+    z-index: 1;
+  }
+
+  .Timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background:#191919;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 15px;
+  }
+
+  .Timeline ul li div::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .Timeline ul li:nth-child(odd) div {
+    left: 45px;
+  }
+
+  .Timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--Primary) transparent transparent;
+  }
+  
+  
+  .Timeline ul li:nth-child(even) div {
+    left: -439px;
+  }
+
+  
+  .Timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent var(--Primary);
+  }
+  
+  time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding:5px;
+    background-image: linear-gradient(to right,yellow,red,purple,blue);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  /* EFFECTS in case you want to do it manually
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* .Timeline ul li::after {
+  transition: background 0.5s ease-in-out;
+}
+
+
+.Timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.Timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.Timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+
+.Timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}  */
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 960px) {
+
+  .Timeline ul li div {
+    width: 250px;
+  }
+
+  
+   .Timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  .Timeline ul li {
+    margin-left: 20px;
+  }
+  .Timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .Timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .Timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--Primary) transparent transparent;
+  }
+}

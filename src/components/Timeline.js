@@ -1,6 +1,6 @@
 import React from 'react';
 // ,{useRef,useLayoutEffect,useState}
-import './Timeline.css';
+import '../styles/Timeline.css';
 
 //you can also just use the react library AOS to animate on scroll if there are too many nodes.
 

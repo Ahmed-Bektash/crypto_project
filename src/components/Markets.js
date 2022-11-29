@@ -1,7 +1,7 @@
 import React from 'react'
 import 'aos/dist/aos.css';
 
-import './Markets.css'
+import '../styles/Markets.css'
 
 function Markets() {
 

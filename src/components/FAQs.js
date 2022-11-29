@@ -1,5 +1,5 @@
 import React from 'react';
-import'./FAQs.css';
+import'../styles/FAQs.css';
 import Faq from './faq-item';
 
 const data=[
